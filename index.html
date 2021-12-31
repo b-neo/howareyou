@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kor", translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="text/javascript" src="./jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./sealevelripple.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./floating_text.js"></script>
+
+
+    <link rel="stylesheet" href="./nouislider.min.css">
+    <script src="./nouislider.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    
+    <script src="./three.js"></script>
+    <script src="./three.module.js"></script>
+    <script type="text/javascript" src="./rain.js"></script>
+    
+    <title>How are you</title>
+</head>
+<body>
+    <audio class='bgm' src="./rain.mp3" preload loop></audio>
+    <div class="talk">
+        <label for="howareyou" class='ask'>무슨 일이에요?</label>
+        <div class="main">
+            <div class="inputAndBtn">
+                <textarea class="howareyou" rows=5></textarea>
+                <input type="button" class="btn btn-primary send" value="💧"></input>
+            </div>
+            <label for="howareyou" class='info'>아무것도 기록되지 않아요.</label>
+        </div>
+        <div id="rainControlBar"></div>
+    </div>
+    <div class="letters"></div>
+    <div class="sun">
+        <div class="ray_box">
+            <div class="ray ray1"></div>
+            <div class="ray ray2"></div>
+            <div class="ray ray3"></div>
+            <div class="ray ray4"></div>
+            <div class="ray ray5"></div>
+            <div class="ray ray6"></div>
+            <div class="ray ray7"></div>
+            <div class="ray ray8"></div>
+            <div class="ray ray9"></div>
+            <div class="ray ray10"></div>
+        </div>
+    </div>
+    
+    <div class="rain">
+        <canvas id="canvas">Canvas is not supported in your browser</canvas>    
+    </div>
+    <div class="waves"></div>
+    <div id="waterlevel">
+        <div class="letters"></div>
+    </div>
+
+</body>
+</html>
