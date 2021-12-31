@@ -416,6 +416,10 @@ $(document).ready(function () {
 			tell("비와 함께 사라지기를");
 			var rain = $(".rain");
 			rain.velocity("fadeIn", 2000);
+			var audio = $(".bgm");
+			audio.trigger("play");
+			audio.animate({ volume: 0 }, 1);
+			audio.animate({ volume: 0.3 }, 800);
 		}, 1500);
 
 		setTimeout(() => {
